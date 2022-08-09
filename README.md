@@ -9,7 +9,7 @@
 # How to run this project on your local system
 *This is a MERN stack project. Technologies used in this project are **MongoDB**, **Express**, **React** and **Node**. So please make sure that your machine has all the above mentioned technologines installed and running before running this project.*
 
-1. Download the zip file of this project.
+1. [Download](https://github.com/rajeshy45/Fudo/archive/refs/heads/main.zip) the zip file of this project.
 2. Extract the zip file.
 3. Open the extracted folder.
 4. Open terminal or cmd and cd into this folder.
@@ -85,6 +85,6 @@
 ![17]
 
 # Contributors
-- Vaishnavi Uppuluri
-- Rajesh Yemineni
+- [Vaishnavi Uppuluri](https://github.com/vyshu0001)
+- [Rajesh Yemineni](https://github.com/rajeshy45)
 - Sai Koushik
