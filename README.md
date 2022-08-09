@@ -35,6 +35,8 @@
 [12]: /images/adminlogin.png
 [13]: /images/superadmin.png
 [14]: /images/manager.png
+[15]: /images/apidata.png
+[16]: /images/blankpage.png
 
 ## Home Page
 ![1]
@@ -70,5 +72,11 @@
 
 # Issues
 1. Sometimes getting the API data when back button is pressed instead of rendering the page - Solvable, will resolve soon, refresh to solve immediately.
+
+![15]
+
 2. Sometimes getting the blank page when navigating in adminlogin, superadmin, and manager portals - Solvable, will resolve soon, refresh to solve immediately.
+
+![16]
+
 3. Negative order quantity in item page - Solvable, will resolve soon.
