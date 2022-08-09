@@ -83,3 +83,8 @@
 3. Negative order quantity in item page - Solvable, will resolve soon.
 
 ![17]
+
+# Contributors
+- Vaishnavi Uppuluri
+- Rajesh Yemineni
+- Sai Koushik
