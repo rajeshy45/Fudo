@@ -91,4 +91,4 @@
 # Contributors
 - [Vaishnavi Uppuluri](https://github.com/vyshu0001)
 - [Rajesh Yemineni](https://github.com/rajeshy45)
-- Sai Koushik
+- Sai Koushik Ananthoju
