@@ -19,3 +19,34 @@
 8. cd into the client folder of the project.
 9. Run the command `npm install`. *Make sure that you have latest versions of node and npm installed in your machine.*
 10. Then run the command `npm start`. *Make sure that you have latest version of MongoDB installed and **running** in your machine.* After this, a window will be opened directly in your default browser.
+
+# Images
+[1]: /images/home1.png
+[2]: /images/home2.png
+[3]: /images/home3.png
+[4]: /images/login.png
+[5]: /images/signup.png
+[6]: /images/landing1.png
+[7]: /images/landing2.png
+[8]: /images/menu.png
+[9]: /images/item.png
+[10]: /images/cart.png
+[11]: /images/orders.png
+[12]: /images/adminlogin.png
+[13]: /images/superadmin.png
+[14]: /images/manager.png
+
+![1]
+![2]
+![3]
+![4]
+![5]
+![6]
+![7]
+![8]
+![9]
+![10]
+![11]
+![12]
+![13]
+![14]
