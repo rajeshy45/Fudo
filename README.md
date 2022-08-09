@@ -37,6 +37,7 @@
 [14]: /images/manager.png
 [15]: /images/apidata.png
 [16]: /images/blankpage.png
+[17]: /images/negative-quantity.png
 
 ## Home Page
 ![1]
@@ -80,3 +81,5 @@
 ![16]
 
 3. Negative order quantity in item page - Solvable, will resolve soon.
+
+![17]
