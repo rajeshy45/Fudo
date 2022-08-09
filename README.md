@@ -36,17 +36,39 @@
 [13]: /images/superadmin.png
 [14]: /images/manager.png
 
+## Home Page
 ![1]
 ![2]
 ![3]
+## Login/Signup
 ![4]
 ![5]
+## Langing Page
 ![6]
 ![7]
+## Menu Page
 ![8]
+## Item Page
 ![9]
+## Cart Page
 ![10]
+## Orders Page
 ![11]
+## Admin Login Page
 ![12]
+## Super Admin Portal
 ![13]
+## Manager Portal
 ![14]
+
+# Important Notes
+- Navigate to `localhost:3000/superadmin` for super admin portal.
+- Navigate to `localhost:3000/manager` for manager portal.
+- No functionality for the profile option in the user website.
+- No functionality for the footer section.
+- No functionality for the Edit profile option in superadmin and manager portals.
+
+# Issues
+1. Sometimes getting the API data when back button is pressed instead of rendering the page - Solvable, will resolve soon, refresh to solve immediately.
+2. Sometimes getting the blank page when navigating in adminlogin, superadmin, and manager portals - Solvable, will resolve soon, refresh to solve immediately.
+3. Negative order quantity in item page - Solvable, will resolve soon.
