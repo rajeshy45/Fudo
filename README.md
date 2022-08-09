@@ -68,6 +68,9 @@
 - Navigate to `localhost:3000/superadmin` for super admin portal.
 - Navigate to `localhost:3000/manager` for manager portal.
 - Use only images that are in `/client/public/images` folder while adding or editing items. For new images, paste that image in `/client/public/images` folder and then use it.
+- No functionality for continue with google and continue with phone number options in login and sigup modals.
+- No error messages are provided for user errors. For example, if the user enters incorrect password, he will be redirected to the home page without any error message.
+- Create an account first and then login.
 - No functionality for the profile option in the user website.
 - No functionality for the footer section.
 - No functionality for the Edit profile option in superadmin and manager portals.
