@@ -67,6 +67,7 @@
 # Important Notes
 - Navigate to `localhost:3000/superadmin` for super admin portal.
 - Navigate to `localhost:3000/manager` for manager portal.
+- Use only images that are in `/client/public/images` folder while adding or editing items. For new images, paste that image in `/client/public/images` folder and then use it.
 - No functionality for the profile option in the user website.
 - No functionality for the footer section.
 - No functionality for the Edit profile option in superadmin and manager portals.
