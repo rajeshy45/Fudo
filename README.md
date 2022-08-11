@@ -71,6 +71,8 @@
 - No functionality for continue with google and continue with phone number options in login and sigup modals.
 - No error messages are provided for user errors. For example, if the user enters incorrect password, he will be redirected to the home page without any error message.
 - Create an account first and then login.
+- Signup as a superadmin and add some items to see the items in the menu of the user website.
+- Login as superadmin and create categories Top Fudos and Top Offers and add some items into those categories to see those items in the landing page under top fudos and top categories section.
 - No functionality for the profile option in the user website.
 - No functionality for the footer section.
 - No functionality for the Edit profile option in superadmin and manager portals.
