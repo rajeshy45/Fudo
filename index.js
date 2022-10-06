@@ -107,7 +107,7 @@ app.get("/", function (req, res) {
     });
 });
 
-app.get("/api/auth/:person", function (req, res) {
+app.get("/auth/:person", function (req, res) {
     let isAuthenticated = null;
     if (req.params.person === "user") {
         isAuthenticated = authentication.user;
