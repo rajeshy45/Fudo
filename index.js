@@ -11,7 +11,6 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
-const uri = process.env.MONGODB_URI || DB_URL;
 
 app.use(
     bodyParser.urlencoded({
@@ -21,7 +20,7 @@ app.use(
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
-mongoose.connect(uri);
+mongoose.connect(process.env.DB_URL);
 
 const categorySchema = new mongoose.Schema({
     name: String,
@@ -78,6 +77,18 @@ const Item = mongoose.model("Item", itemSchema);
 const Order = mongoose.model("Order", orderSchema);
 const CartItem = new mongoose.model("CartItem", cartItemSchema);
 
+
+if (
+    process.env.NODE_ENV === "production" ||
+    process.env.NODE_ENV === "staging"
+) {
+    app.use(express.static("client/build"));
+    app.get("*", (req, res) => {
+        res.sendFile(path.join(__dirname + "/client/build/index.html"));
+    });
+}
+
+
 let authentication = {
     user: false,
     manager: false,
@@ -89,16 +100,6 @@ let person = {
     manager: null,
     superadmin: null,
 };
-
-if (
-    process.env.NODE_ENV === "production" ||
-    process.env.NODE_ENV === "staging"
-) {
-    app.use(express.static("client/build"));
-    app.get("*", (req, res) => {
-        res.sendFile(path.join(__dirname + "/client/build/index.html"));
-    });
-}
 
 app.get("/", function (req, res) {
     res.json({
