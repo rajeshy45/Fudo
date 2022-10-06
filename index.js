@@ -11,6 +11,7 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
+const uri = process.env.MONGODB_URI || DB_URL;
 
 app.use(
     bodyParser.urlencoded({
@@ -20,7 +21,7 @@ app.use(
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.DB_URL);
+mongoose.connect(uri);
 
 const categorySchema = new mongoose.Schema({
     name: String,
