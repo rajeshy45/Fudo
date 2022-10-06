@@ -36,7 +36,7 @@ function Root() {
 
         React.useEffect(() => {
             const request = async () => {
-                const response = await fetch("/auth/user");
+                const response = await fetch("/api/auth/user");
                 const json = await response.json();
                 setIsLoaded(true);
                 setIsAuthenticated(json.isAuthenticated);
