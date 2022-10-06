@@ -88,12 +88,15 @@ let person = {
     superadmin: null,
 };
 
-// if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
-//     app.use(express.static('client/build'));
-//     app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname + '/client/build/index.html'));
-//     });
-//    }
+if (
+    process.env.NODE_ENV === "production" ||
+    process.env.NODE_ENV === "staging"
+) {
+    app.use(express.static("client/build"));
+    app.get("*", (req, res) => {
+        res.sendFile(path.join(__dirname + "/client/build/index.html"));
+    });
+}
 
 app.get("/", function (req, res) {
     res.json({
@@ -197,19 +200,19 @@ app.post("/approve-order", function (req, res) {
     const id = req.body.id;
 
     Order.findById(id, function (err, order) {
-        order.status = 'approved';
+        order.status = "approved";
         order.save();
-    })
-})
+    });
+});
 
 app.post("/reject-order", function (req, res) {
     const id = req.body.id;
 
     Order.findById(id, function (err, order) {
-        order.status = 'rejected';
+        order.status = "rejected";
         order.save();
-    })
-})
+    });
+});
 
 app.post("/place-order", function (req, res) {
     const { item, quantity } = req.body;
