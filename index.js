@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+const path = require('path');
 const saltRounds = 10;
 dotenv.config();
 
