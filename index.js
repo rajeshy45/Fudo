@@ -135,6 +135,7 @@ app.get("/categories", function (req, res) {
 
 app.get("/items", function (req, res) {
     Item.find({}, function (err, items) {
+        console.log(items);
         if (err) {
             console.log(err);
         } else {
