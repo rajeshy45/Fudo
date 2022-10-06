@@ -46,9 +46,9 @@ function Root() {
             request();
         });
 
-    if (!isLoaded) {
-        return <Loading />;
-    }
+    // if (!isLoaded) {
+    //     return <Loading />;
+    // }
 
     if (isAuthenticated) {
         return <Navigate to="/home" />;
