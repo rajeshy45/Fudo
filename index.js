@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
-const path = require('path');
 const saltRounds = 10;
 dotenv.config();
 
@@ -76,17 +75,6 @@ const Category = mongoose.model("Category", categorySchema);
 const Item = mongoose.model("Item", itemSchema);
 const Order = mongoose.model("Order", orderSchema);
 const CartItem = new mongoose.model("CartItem", cartItemSchema);
-
-
-if (
-    process.env.NODE_ENV === "production" ||
-    process.env.NODE_ENV === "staging"
-) {
-    app.use(express.static("client/build"));
-    app.get("*", (req, res) => {
-        res.sendFile(path.join(__dirname + "/client/build/index.html"));
-    });
-}
 
 
 let authentication = {
