@@ -123,7 +123,6 @@ app.get("/categories", function (req, res) {
 
 app.get("/items", function (req, res) {
     Item.find({}, function (err, items) {
-        console.log(items);
         if (err) {
             console.log(err);
         } else {
@@ -214,7 +213,6 @@ app.post("/place-order", function (req, res) {
         quantity: quantity,
         status: "processing",
     });
-    console.log(order);
     order.save(function (err) {
         if (err) {
             console.log(err);
@@ -450,7 +448,6 @@ app.post("/cart/inc", function (req, res) {
     User.findOne(userQuery).then((item) => {
         const audioIndex = item.cart
             .map((item) => {
-                console.log(item._id);
                 return String(item._id);
             })
             .indexOf(id);
@@ -478,7 +475,6 @@ app.post("/cart/dec", function (req, res) {
     User.findOne(userQuery).then((item) => {
         const audioIndex = item.cart
             .map((item) => {
-                console.log(item._id);
                 return String(item._id);
             })
             .indexOf(id);
@@ -506,15 +502,12 @@ app.post("/remove-item-from-cart", function (req, res) {
             user.cart = user.cart.filter(function (order) {
                 return String(order._id) !== id;
             });
-            console.log(user.cart);
             user.save();
         }
     });
 
-    console.log(id);
 
     CartItem.findOne({ _id: id }, function (err, item) {
-        console.log(item);
         item.remove();
     });
 });
