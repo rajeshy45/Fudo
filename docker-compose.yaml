@@ -1,0 +1,14 @@
+
+services:
+  frontend:
+    build: ./client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    links:
+      - backend
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
