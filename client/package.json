@@ -2,7 +2,7 @@
     "name": "client",
     "version": "0.1.0",
     "private": true,
-    "proxy": "https://fudo-backend.onrender.com/",
+    "proxy": "http://backend:5000/",
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
         "@testing-library/jest-dom": "^5.16.4",
