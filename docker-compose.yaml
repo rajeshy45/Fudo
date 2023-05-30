@@ -1,5 +1,18 @@
-
 services:
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - .:/app
   frontend:
     build: ./client
     ports:
@@ -8,7 +21,5 @@ services:
       - backend
     links:
       - backend
-  backend:
-    build: .
-    ports:
-      - "5000:5000"
+    volumes:
+      - ./client:/app
